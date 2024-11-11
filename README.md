@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# Crypto Gainers and Losers
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application that tracks cryptocurrency prices, showing the top 100 cryptocurrencies along with their gainers and losers in the last 24 hours.
 
-## Get started
+## Prerequisites
 
-1. Install dependencies
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v20)
+- [npm](https://www.npmjs.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [Android Studio](https://developer.android.com/studio)
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/joao4xz/crypto_gainers_and_losers.git
+cd crypto_gainers_and_losers
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Running the App
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. Start the development server:
 
-## Join the community
+```bash
+npm run start
+```
 
-Join our community of developers creating universal apps.
+2. Choose your platform:
+- Press `a` for Android
+- Press `i` for iOS
+- Press `w` for web
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Building the App
+
+### Setting up EAS Build
+
+1. Install EAS CLI:
+```bash
+npm install -g eas-cli
+```
+
+2. Login to your Expo account:
+```bash
+eas login
+```
+
+### Building for Android
+
+1. Create a development build:
+```bash
+eas build -p android --profile preview
+```
+
+2. Once the build is complete, download the APK from the provided URL
+
+3. Install the APK using ADB:
+```bash
+adb install path/to/your/app.apk
+```
+## Resources
+
+- [CoinPaprika API](https://api.coinpaprika.com/) for cryptocurrency data
+- [Expo](https://expo.dev/) for the development framework
+- [React Native](https://reactnative.dev/) for the mobile framework
