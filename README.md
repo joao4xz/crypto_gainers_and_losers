@@ -63,6 +63,7 @@ eas login
 ```bash
 eas build -p android --profile preview
 ```
+.
 
 2. Once the build is complete, download the APK from the provided URL
 
