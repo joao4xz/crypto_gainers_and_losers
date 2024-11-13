@@ -2,6 +2,11 @@
 
 A React Native mobile application that tracks cryptocurrency prices, showing the top 100 cryptocurrencies along with their gainers and losers in the last 24 hours.
 
+## Contributors
+- [João Henrique](https://github.com/joao4xz)
+- [Marcelle Andrade](https://github.com/Marcelleap)
+- [Vinicius Corrêa de Assis](https://github.com/viniciuscoassis)
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
